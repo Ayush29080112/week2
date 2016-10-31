@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Filters</title>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app='MsgApp'>
+
+
+  <div ng-controller='MsgController'>
+    {{name}}
+    {{ cost | currency : 'INR' : 1}}
+    <h1>{{sayMessage()}}</h1>
+
+  </div>
+</body>
+</html>
